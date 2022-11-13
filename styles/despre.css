@@ -1,0 +1,112 @@
+/* Stilizare intro */
+.intro {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    color: var(--bg-light);
+}
+
+/* Stilizare sectiune trainers */
+.trainers {
+    display: flex;
+    justify-content: center;
+}
+
+.trainersContainer {
+    display: flex;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-large);
+}
+
+.trainersContainer .trainersWrapper {
+    margin: var(--spacing-small);
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px #ddd solid;
+    border-radius: 5px;
+
+}
+
+.trainersWrapper .trainerName {
+    display: flex;
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    color: rgba(251, 180, 76, 1);
+    justify-content: center;
+    width: 95%;
+    padding: var(--spacing-tiny) 0;
+    opacity: 0.9;
+    margin-top: -23px;
+}
+
+.trainersWrapper img {
+    filter: grayscale(100);
+    border-radius: 50%;
+    /* position: absolute; */
+    /* bottom: 70%; */
+    width: 150px;
+    height: 150px;
+    margin-top: -70px;
+}
+
+.trainersWrapper p {
+    margin: var(--spacing-large) var(--spacing-small);
+    margin-top: var(--spacing-medium);
+}
+
+/* Breakpoints */
+
+@media screen and (max-width:992px) {
+
+    .trainersContainer .trainersWrapper {
+        width: calc(100% /4);
+    }
+
+    .trainersContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .trainersContainer .trainersWrapper {
+        width: calc(100% /3);
+        margin: var(--spacing-xl);
+    }
+
+    .trainersContainer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .trainersContainer .trainersWrapper {
+        width: 100%;
+        margin: var(--spacing-xl);
+    }
+
+    .trainersContainer {
+        display: flex;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Serif:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <!-- https://itschool-clone.netlify.app/index.html -->
+
+    <!-- Nav Bar -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="./img/itschool-logo.png" alt="ITSchool Logo">
+            </a>
+            <div class="menuIconContainer">
+                <i class="material-icons menu-icon">menu</i>
+                <input type="checkbox" />
+                <ul>
+                    <li>
+                        <a href="courses.html">Cursuri Online</a>
+                    </li>
+                    <li class="aboutUsLink">
+                        <a href="despre.html">Despre Noi
+                            <i class="material-icons arrow-down-icon">arrow_drop_down</i>
+                            <!-- https://materializecss.com/icons.html -->
+                        </a>
+                        <div class="submenu">
+                            <a href="index.html">IT School</a>
+                            <a href="despre.html">Despre Noi</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Intro -->
+        <section class="introContact">
+            <h1>Contact IT School</h1>
+        </section>
+
+        <!-- Informatii generale -->
+        <section class="generalInformation">
+            <div class="container">
+                <h2>Informații generale</h2>
+                <p>Nu ai găsit ce căutai sau te putem ajuta și cu alte informații referitoare la programele de pregătire
+                    IT School? Suntem aici să te ajutăm. Îți reamintim că pe pagina FAQ regăsești o listă cu cele mai
+                    frecvente întrebări.
+                </p>
+
+                <!-- Ne poti gasi la -->
+                <p>Ne poți găsi la:</p>
+                <div class="containerInfo">
+                    <div class="informationWrapper">
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="material-icons"> phone_iphone </span>
+                                    Mobil:
+                                </p>
+                                <a href="tel:00737880420" class="linksContact">+40 737 880 420</a>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="material-icons"> email </span>
+                                    E-mail:
+                                </p>
+                                <a href="mailto:office@itschool.ro" class="linksContact">office@itschool.ro</a>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="material-icons"> facebook </span>
+                                    Facebook:
+                                </p>
+                                <a href="https://www.facebook.com/itschool.ro/" class="linksContact">/ITSchool</a>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="material-icons"> schedule </span>
+                                    Program:
+                                </p>
+                                <a>Luni - Vineri, de la 10:00 - 18:00</a>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="material-icons"> location_on </span>
+                                    Sediu central:
+                                </p>
+                                <a>Timișoara</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Form -->
+                    <div class="informationWrapper">
+                        <form class="formContact">
+                            <label for="name">Nume Prenume:</label>
+                            <input type="text" placeholder="Ex: Ionescu Ion" id="name">
+                            <label for="email">Adresa de email:</label>
+                            <input type="email" placeholder="Ex: ion.ionescu@gmail.com" id="email">
+                            <label for="phone">Telefon:</label>
+                            <input type="text" placeholder="Ex: 0722 234 567" id="phone">
+                            <label for="message">Mesajul tau:</label>
+                            <textarea id="message"></textarea>
+                            <input type="submit" value="Trimite" id="buttonSend">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>IT School România © 2021. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+:root {
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+    --button-color: #2bb686;
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+    --mobile-logo-height: 45px;
+}
+
+/* Stilizare Intro Contact Us */
+.introContact {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introContact h1 {
+    color: var(--bg-light);
+}
+
+/* Stilizare informatii generale intro */
+
+.generalInformation .container h2,
+.generalInformation .container p {
+    margin: var(--fs-large) 0;
+}
+
+.generalInformation .container h2 {
+    text-align: center;
+    margin: var(--spacing-large);
+}
+
+.containerInfo {
+    display: flex;
+}
+
+/* Stilizare Ne Poti Gasi La */
+.informationWrapper {
+    width: 50%;
+    margin: var(--spacing-medium);
+}
+
+.informationWrapper li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #ddd solid;
+}
+
+/* Stilizare Form */
+form input,
+textarea {
+    display: block;
+    margin-bottom: var(--spacing-medium);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: var(--spacing-small);
+}
+
+textarea {
+    height: 100px;
+}
+
+li p,
+li a {
+    display: flex;
+    align-items: center;
+}
+
+li a {
+    font-size: var(--fs-medium);
+    color: #8e8e8e;
+}
+
+.informationWrapper form {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-small);
+}
+
+label {
+    margin-bottom: var(--spacing-tiny);
+    font-size: var(--fs-medium);
+}
+
+#buttonSend {
+    width: calc(100% /5);
+    background-color: var(--button-color);
+    color: var(--bg-light);
+    border: none;
+    padding: var(--spacing-small) 0;
+}
+
+.linksContact:hover {
+    color: var(--bg-dark);
+}
+
+/* Breakpoints */
+
+@media screen and (max-width:768px) {
+    body {
+        max-width: 768px;
+    }
+
+    .containerInfo {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .informationWrapper {
+        width: 90%;
+    }
+
+    .generalInformation {
+        margin: var(--spacing-medium);
+    }
+
+    .introContact h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    body {
+        max-width: 576px;
+    }
+
+    .containerInfo {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .informationWrapper {
+        width: 90%;
+    }
+
+    .generalInformation {
+        margin: var(--spacing-medium);
+    }
+
+    .introContact h1 {
+        font-size: 1.5rem;
+    }
+
+    .generalInformation .container h2 {
+        font-size: 1.25rem;
+    }
+}

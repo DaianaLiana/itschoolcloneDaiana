@@ -1,0 +1,155 @@
+:root {
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+    --button-color: #2bb686;
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+    --mobile-logo-height: 45px;
+}
+
+
+/* Stilizare intro */
+.introCourses {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introCourses h1 {
+    color: var(--bg-light);
+}
+
+/* Stilizare cursuri */
+
+.containerIntroCourses h2,
+.containerIntroCourses p {
+    text-align: center;
+    margin: var(--spacing-large)
+}
+
+
+
+/* Stilizare curs wrap */
+.containerCourses {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.coursesWrapped {
+    border: 1px #ddd solid;
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+    width: 33%;
+    margin: 0 var(--spacing-small);
+    margin-bottom: var(--spacing-xl);
+}
+
+.coursesWrapped .certification {
+    display: flex;
+}
+
+.coursesWrapped img {
+    width: 100%;
+}
+
+.certification img {
+    height: 17px;
+    width: auto;
+    margin-left: var(--spacing-small);
+}
+
+.coursesWrapped h3,
+.certification,
+.badgesCourses,
+.coursesWrapped a {
+    margin: var(--spacing-medium) var(--spacing-small);
+}
+
+.certification p {
+    color: #666;
+}
+
+.coursesWrapped h3 {
+    color: var(--bg-dark);
+    font-weight: bold;
+}
+
+.badgesCourses .material-icons {
+    vertical-align: middle;
+    font-size: var(--fs-medium);
+}
+
+.coursesWrapped .badgesCourses {
+    font-size: var(--fs-medium);
+    color: #666;
+}
+
+.coursesWrapped a {
+    color: var(--bg-light);
+    background-color: var(--button-color);
+    width: calc(100% /4);
+    text-align: center;
+    font-size: var(--fs-medium);
+    border-radius: 5px;
+    padding: var(--spacing-tiny) 0;
+}
+
+.container {
+    padding: var(--spacing-medium) 0;
+}
+
+.containerIntroCourses p span {
+    font-weight: bold;
+}
+
+/* Breakpoints */
+
+@media screen and (max-width:992px) {
+    .containerCourses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .coursesWrapped {
+        width: 45%;
+        margin-left: var(--spacing-medium);
+        margin-right: 0;
+    }
+
+    .introCourses h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .containerCourses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .coursesWrapped {
+        width: 100%;
+    }
+
+    .introCourses h1 {
+        font-size: 1.5rem;
+    }
+}
